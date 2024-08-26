@@ -1,7 +1,8 @@
 import React from 'react'
-import profile from '../assets/profile.jpg'
-import { HERO_CONTENT } from '../constants/constants'
+import profile from '../../public/profile.jpg'
+import { HERO_CONTENT } from '../../config/constants'
 import { motion } from "framer-motion"
+import { StaticImageData } from 'next/image';
 
 const container = (delay: number) => ({
     hidden: { x: -100, opacity: 0 },
@@ -10,7 +11,10 @@ const container = (delay: number) => ({
         opacity: 1,
         transition: { duration: 0.5, delay: delay }
     }
-})
+});
+
+const profileUrl = (profile as StaticImageData).src;
+
 
 const Hero = () => {
     return (
@@ -30,7 +34,7 @@ const Hero = () => {
                 </div>
                 <div className="w-full lg:w-1/2 lg:p-8">
                     <div className="flex justify-center">
-                        <motion.img src={profile} alt="Ananthu M A"
+                        <motion.img src={(profile as StaticImageData).src} alt="Ananthu M A"
                             initial={{ x: 100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 1, delay: 1.2 }} />
                     </div>
                 </div>

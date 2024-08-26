@@ -1,7 +1,8 @@
 import React from 'react'
-import aboutImg from '../assets/about.png';
-import { ABOUT_TEXT } from '../constants/constants'
+import aboutImg from '../../public/about.png';
+import { ABOUT_TEXT } from '../../config/constants'
 import { motion } from "framer-motion"
+import Image, { StaticImageData } from 'next/image';
 
 const About = () => {
     return (
@@ -13,11 +14,11 @@ const About = () => {
             </motion.h2>
             <div className="flex flex-wrap pb-10">
                 <motion.div className="w-full lg:w-1/2 lg:p-8" whileInView={{ opacity: 1, x: 0, y: 0 }} initial={{ opacity: 0, x: -100, y: -100 }} transition={{ duration: 1 }}>
-                    <div className="flex items-center justify-center">
-                        <img className='rounded-2xl' width={250} src={aboutImg} alt="about image" />
+                    <div className="flex items-center justify-center lg:w-2/3">
+                        <Image src={(aboutImg as StaticImageData).src} alt="about image" layout='responsive' width={250} height={250} />
                     </div>
                 </motion.div>
-                <motion.div className='w-full lg:w-1/2' whileInView={{ opacity: 1, x: 0, y: 0 }} initial={{ opacity: 0, x: 100, y: -100 }} transition={{ duration: 1 }}>
+                <motion.div className='w-full lg:w-1/2 lg:mt-5' whileInView={{ opacity: 1, x: 0, y: 0 }} initial={{ opacity: 0, x: 100, y: -100 }} transition={{ duration: 1 }}>
                     <div className='flex justify-center lg:justify-start'>
                         <p className='my-5 max-w-xl p-6'>{ABOUT_TEXT}</p>
                     </div>

@@ -1,6 +1,7 @@
 import React from "react"
-import { PROJECTS } from "../constants/constants"
+import { PROJECTS } from "../../config/constants"
 import { motion } from "framer-motion"
+import { StaticImageData } from "next/image"
 
 const Projects = () => {
     return (
@@ -13,7 +14,7 @@ const Projects = () => {
                         <motion.div className="w-full lg:w-1/4"
                             whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -100 }} transition={{ duration: 1 }}>
                             <motion.img whileHover={{ scale: 2 }} transition={{ duration: 0.3, delay: 0.5 }} style={{ display: 'inline-block' }}
-                                src={project.image} alt={project.title} width={300} height={300} className="mb-6 rounded" />
+                                src={(project.image as StaticImageData).src} alt={project.title} width={300} height={300} className="mb-6 rounded" />
                         </motion.div>
                         <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 100 }} transition={{ duration: 1 }}
                             className="w-full max-w-xl lg:w-3/4">
