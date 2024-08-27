@@ -14,7 +14,7 @@ export const EXPERIENCES = [
     role: "Full Stack Developer Trainee",
     company: "BROTOTYPE",
     description: `I completed an intensive 28-week MERN stack development program at Brototype, where my progress was regularly reviewed by industry experts. The program was rigorous, involving 12-16 hours of daily hands-on training, including day and night sessions. During this period, I built two main projects and several mini projects from scratch, honing my skills in full-stack development. One of these projects was completed within a challenging timeframe of just one and a half months, emphasizing my ability to manage deadlines and effectively manage time. This experience not only strengthened my technical skills but also cultivated my self-learning abilities, enabling me to stay current with the latest trends and technologies in the field.`,
-    technologies: ["MERN", "RESTful API", "AWS EC2", "NGINX", "Tailwind CSS", "Git"],
+    technologies: ["MERN", "Next.js", "RESTful API", "AWS EC2", "NGINX", "Tailwind CSS", "Git"],
   },
 ];
 
@@ -45,7 +45,7 @@ export const PROJECTS = [
     website: "https://portfolio.smartdepot.co.in/",
     image: project4,
     description: "A personal portfolio website showcasing my skills, projects, and professional journey. The site includes sections for about me, projects, skills, and contact information.",
-    technologies: ["React.js", "TypeScript", "Tailwind", "Framer Motion"]
+    technologies: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"]
   },
   {
     title: "E-Learning Platform ( Launching Soon )",
