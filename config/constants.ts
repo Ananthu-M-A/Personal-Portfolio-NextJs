@@ -21,35 +21,35 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Portfolio Website",
-    website: "https://portfolio.smartdepot.co.in/",
+    website: process.env.NEXT_PUBLIC_PORTFOLIO_URL,
     image: project4,
     description: "A personal portfolio website showcasing my skills, projects, and professional journey. The site includes sections for about me, projects, skills, and contact information.",
     technologies: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"]
   },
   {
     title: "Wanderlust Hotel Booking Platform",
-    website: "https://wanderlust.smartdepot.co.in/",
+    website: process.env.NEXT_PUBLIC_WANDERLUST_URL,
     image: project2,
     description: "A cutting-edge platform for booking hotels with a chatbot system for hotel and restaurant reservations, featuring an admin panel for user, booking, and payment monitoring.",
     technologies: ["TypeScript", "Tailwind", "Stripe", "Socket.IO", "Vercel", "JWT", "Axios", "Cloudinary", "React-Chatbotify", "Google Places API"]
   },
   {
     title: "E-Learning Platform ( Launching Soon )",
-    website: "",
+    website: process.env.NEXT_PUBLIC_ELEARNING_URL,
     image: project5,
     description: "An online learning platform designed to offer courses and educational content, featuring user authentication, course management, and a clean, user-friendly interface.",
     technologies: ["React.js", "TypeScript", "Tailwind"]
   },
   {
     title: "Password Generator Online ( Undergoing Maintenance )",
-    website: "",
+    website: process.env.NEXT_PUBLIC_PSWD_GENERATOR_URL,
     image: project3,
     description: "A web application that generates strong, customizable passwords.",
     technologies: ["React.js", "Express.js", "MongoDB", "TypeScript", "Tailwind"]
   },
   {
     title: "Smart Depot E-Commerce Platform",
-    website: "https://ecommerce.smartdepot.co.in/",
+    website: process.env.NEXT_PUBLIC_SMARTDEPOT_URL,
     image: project1,
     description: "An e-commerce platform designed for smartphone service engineers and trainers to purchase repair tools and spare parts, featuring secure payment integration and cloud deployment.",
     technologies: ["EJS", "Bootstrap", "Razorpay", "MVC", "Mongoose", "Chart.js", "Nodemailer"]
@@ -57,7 +57,8 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Govindam(H), Edakkulam(PO), Kozhikode-673306",
-  phoneNo: "+91 9539272385",
-  email: "ananthumapookkad@gmail.com",
+  linkedin: process.env.NEXT_PUBLIC_LINKEDIN,
+  github: process.env.NEXT_PUBLIC_GITHUB,
+  email: process.env.NEXT_PUBLIC_EMAIL,
+  instagram: process.env.NEXT_PUBLIC_INSTAGRAM,
 };
