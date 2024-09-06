@@ -17,7 +17,7 @@ const Experiences = () => {
                             className="w-full max-w-xl lg:w-3/4">
                             <h6 className="mb-2 font-semibold">
                                 {experience.role} - <span className="text-sm text-purple-100">
-                                    <a href="https://www.brototype.com/" target="_blank">{experience.company}</a>
+                                    {experience.type}
                                 </span>
                                 <p className="mb-4 text-neutral-400">{experience.description}</p>
                                 {experience.technologies.map((tech, index) => (

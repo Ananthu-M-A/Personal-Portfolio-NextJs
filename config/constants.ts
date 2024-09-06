@@ -11,20 +11,20 @@ export const ABOUT_TEXT = `Hello, I'm Ananthu M A, a dedicated MERN stack develo
 export const EXPERIENCES = [
   {
     year: "2023 - Present",
-    role: "Full Stack Developer Trainee",
-    company: "BROTOTYPE",
-    description: `I completed an intensive 28-week MERN stack development program at Brototype, where my progress was regularly reviewed by industry experts. The program was rigorous, involving 12-16 hours of daily hands-on training, including day and night sessions. During this period, I built two main projects and several mini projects from scratch, honing my skills in full-stack development. One of these projects was completed within a challenging timeframe of just one and a half months, emphasizing my ability to manage deadlines and effectively manage time. This experience not only strengthened my technical skills but also cultivated my self-learning abilities, enabling me to stay current with the latest trends and technologies in the field.`,
+    role: "Full Stack Developer",
+    type: "Freelance",
+    description: `I completed an intensive 28-week MERN stack development program at BROTOTYPE, where my progress was regularly reviewed by industry experts. The program was rigorous, involving 12-16 hours of daily hands-on training, including day and night sessions. During this period, I built two main projects and several mini projects from scratch, honing my skills in full-stack development. One of these projects was completed within a challenging timeframe of just one and a half months, emphasizing my ability to manage deadlines and effectively manage time. This experience not only strengthened my technical skills but also cultivated my self-learning abilities, enabling me to stay current with the latest trends and technologies in the field.`,
     technologies: ["MERN", "Next.js", "RESTful API", "AWS EC2", "NGINX", "Tailwind CSS", "Git"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "Smart Depot E-Commerce Platform",
-    website: "https://ecommerce.smartdepot.co.in/",
-    image: project1,
-    description: "An e-commerce platform designed for smartphone service engineers and trainers to purchase repair tools and spare parts, featuring secure payment integration and cloud deployment.",
-    technologies: ["EJS", "Bootstrap", "Razorpay", "MVC", "Mongoose", "Chart.js", "Nodemailer"]
+    title: "Portfolio Website",
+    website: "https://portfolio.smartdepot.co.in/",
+    image: project4,
+    description: "A personal portfolio website showcasing my skills, projects, and professional journey. The site includes sections for about me, projects, skills, and contact information.",
+    technologies: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"]
   },
   {
     title: "Wanderlust Hotel Booking Platform",
@@ -34,6 +34,13 @@ export const PROJECTS = [
     technologies: ["TypeScript", "Tailwind", "Stripe", "Socket.IO", "Vercel", "JWT", "Axios", "Cloudinary", "React-Chatbotify", "Google Places API"]
   },
   {
+    title: "E-Learning Platform ( Launching Soon )",
+    website: "",
+    image: project5,
+    description: "An online learning platform designed to offer courses and educational content, featuring user authentication, course management, and a clean, user-friendly interface.",
+    technologies: ["React.js", "TypeScript", "Tailwind"]
+  },
+  {
     title: "Password Generator Online ( Undergoing Maintenance )",
     website: "",
     image: project3,
@@ -41,19 +48,12 @@ export const PROJECTS = [
     technologies: ["React.js", "Express.js", "MongoDB", "TypeScript", "Tailwind"]
   },
   {
-    title: "Portfolio Website",
-    website: "https://portfolio.smartdepot.co.in/",
-    image: project4,
-    description: "A personal portfolio website showcasing my skills, projects, and professional journey. The site includes sections for about me, projects, skills, and contact information.",
-    technologies: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"]
+    title: "Smart Depot E-Commerce Platform",
+    website: "https://ecommerce.smartdepot.co.in/",
+    image: project1,
+    description: "An e-commerce platform designed for smartphone service engineers and trainers to purchase repair tools and spare parts, featuring secure payment integration and cloud deployment.",
+    technologies: ["EJS", "Bootstrap", "Razorpay", "MVC", "Mongoose", "Chart.js", "Nodemailer"]
   },
-  {
-    title: "E-Learning Platform ( Launching Soon )",
-    website: "",
-    image: project5,
-    description: "An online learning platform designed to offer courses and educational content, featuring user authentication, course management, and a clean, user-friendly interface.",
-    technologies: ["React.js", "TypeScript", "Tailwind"]
-  }
 ];
 
 export const CONTACT = {

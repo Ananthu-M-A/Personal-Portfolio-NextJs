@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../../public/logo.png'
 import { FaGithub, FaInbox, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import { motion } from "framer-motion"
-import { StaticImageData } from 'next/image'
+import { StaticImageData } from "next/legacy/image"
 
 const container = (delay: number) => ({
   hidden: { rotate: 0, opacity: 0 },

@@ -2,7 +2,7 @@ import React from 'react'
 import profile from '../../public/profile.jpg'
 import { HERO_CONTENT } from '../../config/constants'
 import { motion } from "framer-motion"
-import { StaticImageData } from 'next/image';
+import { StaticImageData } from "next/legacy/image";
 
 const container = (delay: number) => ({
     hidden: { x: -100, opacity: 0 },

@@ -1,7 +1,7 @@
 import React from "react"
 import { PROJECTS } from "../../config/constants"
 import { motion } from "framer-motion"
-import { StaticImageData } from "next/image"
+import { StaticImageData } from "next/legacy/image"
 
 const Projects = () => {
     return (
