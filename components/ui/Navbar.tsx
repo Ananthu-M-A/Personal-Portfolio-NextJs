@@ -3,6 +3,7 @@ import logo from '../../public/logo.png'
 import { FaGithub, FaInbox, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { motion } from "framer-motion"
 import { StaticImageData } from "next/legacy/image"
+import { CONTACT } from '@/config/constants'
 
 const container = (delay: number) => ({
   hidden: { rotate: 0, opacity: 0 },
@@ -18,19 +19,19 @@ const Navbar = () => {
       </div>
       <div className='m-8 flex items-center justify-center gap-4 text-2xl border-b p-2'>
         <motion.a variants={container(0.5)} initial="hidden" animate="visible"
-          href={process.env.NEXT_PUBLIC_LINKEDIN} target='_blank'>
+          href={CONTACT.linkedin} target='_blank'>
           <FaLinkedin />
         </motion.a>
         <motion.a variants={container(0.7)} initial="hidden" animate="visible"
-          href={process.env.NEXT_PUBLIC_GITHUB} target='_blank'>
+          href={CONTACT.github} target='_blank'>
           <FaGithub />
         </motion.a>
         <motion.a variants={container(0.9)} initial="hidden" animate="visible"
-          href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`} target='_blank'>
+          href={`mailto:${CONTACT.email}`} target='_blank'>
           <FaInbox />
         </motion.a>
         <motion.a variants={container(1.3)} initial="hidden" animate="visible"
-          href={process.env.NEXT_PUBLIC_INSTAGRAM} target='_blank'>
+          href={CONTACT.instagram} target='_blank'>
           <FaInstagram />
         </motion.a>
       </div>
